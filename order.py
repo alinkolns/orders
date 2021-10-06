@@ -1,13 +1,12 @@
 import random
+from collections import Counter
 random.seed(23)#Зерно
 list_data=[]
 data = [random.randint(pow(10,4),pow(10,5)) for i in range(0, 5)]
-
-	
-print(data)	
-
-#print(rnd)
-
+for i in range(len(data)):
+	c=Counter(str(data[i]))
+	print(c)
+print(data)
 
 
 
